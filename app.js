@@ -6,7 +6,7 @@ document.body.classList.toggle('preview', query.get('preview') === '1');
 let columns = ['3', '4', '5'].includes(query.get('cols')) ? query.get('cols') : '3';
 let snapshot;
 let onlySoon = false;
-const portraitAssignments = { '702393':0, '697444':4, '648789':6, '656646':8, '384754':11, '697789':13, '410394':18 };
+const portraitAssignments = { '702393':7, '697444':4, '648789':6, '656646':8, '384754':11, '697789':13, '410394':18 };
 function setColumns(value) {
   columns = value;
   document.documentElement.style.setProperty('--columns', value);
