@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#171918">
+  <title>스타감옥 죄수현황</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="preview-tools" aria-label="디자인 비교 도구">
+    <span>디자인 미리보기</span>
+    <div class="layout-control"><span>PC 카드 배치</span><button data-cols="3" aria-pressed="true">3열</button><button data-cols="4" aria-pressed="false">4열</button><button data-cols="5" aria-pressed="false">5열</button></div>
+    <a href="?capture=1" target="_blank">게시용 화면 ↗</a>
+  </div>
+  <main id="roster">
+    <header class="masthead">
+      <div class="topline"><span class="brand"><i class="bars" aria-hidden="true"></i> 스타감옥</span><a href="https://ygosu.com/board/pan_prison" target="_blank" rel="noopener noreferrer">스타감옥 게시판 ↗</a></div>
+      <div class="heading-row">
+        <div><p class="eyebrow">스타대학 게시판 수감 기록</p><h1>죄수현황<span class="period">.</span></h1><p class="description">입소는 자유로웠으나, 출소는 그렇지 않다.</p></div>
+        <div class="population"><span>현재 수감 중</span><div><strong id="total">—</strong><b>명</b></div></div>
+      </div>
+      <div class="stamp"><span><i aria-hidden="true"></i> 데이터 기준 <time id="updated">확인 중</time></span><span>1시간마다 갱신 · KST</span></div>
+    </header>
+    <section class="directory" aria-labelledby="list-heading">
+      <div class="toolbar">
+        <div class="filter-group"><h2 id="list-heading">수감자 명부</h2><button id="all-filter" class="filter active" aria-pressed="true">전체 <span id="all-count">0</span></button><button id="soon-filter" class="filter" aria-pressed="false">7일 내 출소 <span id="soon-count">0</span></button></div>
+        <div class="search-sort"><input id="search" type="search" placeholder="닉네임 / 회원번호 검색" aria-label="닉네임 또는 회원번호 검색"><select id="sort" aria-label="수감자 정렬"><option value="recent">최근 수감순</option><option value="release">출소 임박순</option></select></div>
+      </div>
+      <p class="capture-sort">최근 수감순</p>
+      <div id="cards" class="cards" aria-live="polite"><p class="empty">수감 기록을 불러오는 중.</p></div>
+      <div class="list-bottom"><span id="result-count"></span><span>머그샷은 실제 회원과 무관한 가상 인물입니다.</span></div>
+    </section>
+    <footer><div><strong>스타감옥 죄수현황</strong><span>스타대학 밴 + 스타감옥 작성 이력 기준 · 스타감옥 밴 회원 제외</span></div><a href="https://ygosu.com/ban_status/?view=restrictions&sort=recent&bid=pan_monstarz" target="_blank" rel="noopener noreferrer">밴 기록 원문 ↗</a><p>출소 예정일은 등록일과 밴기간으로 계산. 실제 해제 여부는 원본 기록 기준.</p></footer>
+  </main>
+</body>
+</html>

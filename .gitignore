@@ -1,0 +1,7 @@
+__pycache__/
+data/raw/
+
+node_modules/
+dist/
+live/
+.vercel/

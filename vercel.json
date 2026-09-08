@@ -1,0 +1,14 @@
+{
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "framework": null,
+  "rewrites": [
+    {"source":"/data/prisoners.json","destination":"https://raw.githubusercontent.com/kill662477-cmyk/star-prison-status/data/prisoners.json"},
+    {"source":"/status.jpg","destination":"https://raw.githubusercontent.com/kill662477-cmyk/star-prison-status/data/status.jpg"}
+  ],
+  "headers": [
+    {"source":"/status.jpg","headers":[{"key":"Cache-Control","value":"no-cache, max-age=0, must-revalidate"}]},
+    {"source":"/data/prisoners.json","headers":[{"key":"Cache-Control","value":"no-cache, max-age=0, must-revalidate"}]}
+  ],
+  "git": {"deploymentEnabled":{"data":false}}
+}

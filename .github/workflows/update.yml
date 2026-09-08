@@ -1,0 +1,52 @@
+name: Refresh prison roster
+on:
+  schedule:
+    - cron: '17 * * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: prison-data-update
+  cancel-in-progress: false
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - name: Read last successful state
+        run: |
+          if git ls-remote --exit-code --heads origin data; then
+            git fetch origin data
+            git worktree add live FETCH_HEAD
+          else
+            mkdir live
+            git -C live init
+            git -C live checkout -b data
+          fi
+      - run: pip install -r requirements.txt
+      - run: npm ci
+      - run: npx playwright install --with-deps chromium
+      - name: Collect changes
+        run: python scripts/update.py --state-dir live
+      - name: Render three-column image
+        run: npm run capture
+      - name: Publish successful snapshot
+        run: |
+          git -C live config user.name 'github-actions[bot]'
+          git -C live config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git -C live add state.json authors.json prisoners.json status.jpg capture.json
+          git -C live commit -m 'Refresh roster and image'
+          if git -C live remote get-url origin >/dev/null 2>&1; then
+            git -C live push origin HEAD:data
+          else
+            git fetch ./live HEAD
+            git push origin FETCH_HEAD:refs/heads/data
+          fi
