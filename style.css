@@ -12,3 +12,38 @@ body.capture .preview-tools,body.capture .toolbar,body.capture .topline>a,body.c
 @media(max-width:360px){.cards{grid-template-columns:1fr}.portrait-wrap{aspect-ratio:1.35}.identity h3{font-size:23px}.reason{min-height:0}.release .clock{display:inline;margin-left:5px}}
 
 body:not(.preview) .preview-tools{display:none}
+
+/* Capture sheet: 540px wide, two columns, oversized type so the board image stays readable at 1:1. */
+body.capture{--columns:2}
+body.capture .cards{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px 12px}
+body.capture .masthead,body.capture .directory,body.capture footer{padding-inline:18px}
+body.capture .heading-row{padding:18px 0}
+body.capture .heading-row h1{font-size:42px;letter-spacing:-2px}
+body.capture .eyebrow{font-size:11px;letter-spacing:1.5px;margin-bottom:7px}
+body.capture .description{font-size:13px}
+body.capture .brand{font-size:15px}
+body.capture .topline{font-size:12px}
+body.capture .population>span{font-size:12px}
+body.capture .population strong{font-size:52px}
+body.capture .population b{font-size:15px}
+body.capture .stamp{font-size:11px;padding:10px 0;flex-wrap:nowrap}
+body.capture .capture-sort{font-size:12px;margin:14px 0 11px}
+body.capture .file-head{padding:8px 11px;font-size:11px;letter-spacing:.5px}
+body.capture .portrait-wrap{aspect-ratio:1.12}
+body.capture .card-content{padding:13px 12px 0}
+body.capture .identity h3{font-size:21px;letter-spacing:-.6px}
+body.capture .member{font-size:12px}
+body.capture .reason-label{font-size:12px;margin:12px 0 5px}
+body.capture .reason{font-size:15px;line-height:1.6;min-height:48px}
+body.capture .sentence{font-size:13px;margin-top:12px;padding:11px 0;gap:4px 8px}
+body.capture .sentence .duration{font-size:15px}
+body.capture .release{padding:10px 12px 11px;align-items:flex-end}
+body.capture .release>div>span{font-size:11px;margin-bottom:3px}
+body.capture .release time{font-size:15px}
+body.capture .release .clock{display:block;margin:2px 0 0;font-size:11px}
+body.capture .countdown{font-size:24px}
+body.capture .list-bottom{flex-direction:row;font-size:11px;margin-top:16px;gap:10px}
+body.capture footer{padding-block:16px 18px;gap:9px}
+body.capture footer>div{flex-direction:column;align-items:flex-start;gap:5px}
+body.capture footer strong{font-size:13px}
+body.capture footer p{font-size:11px}

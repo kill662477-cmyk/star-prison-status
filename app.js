@@ -3,7 +3,7 @@ const query = new URLSearchParams(location.search);
 const capture = query.get('capture') === '1';
 document.body.classList.toggle('capture', capture);
 document.body.classList.toggle('preview', query.get('preview') === '1');
-let columns = ['3', '4', '5'].includes(query.get('cols')) ? query.get('cols') : '3';
+let columns = ['2', '3', '4', '5'].includes(query.get('cols')) ? query.get('cols') : '3';
 let snapshot;
 let onlySoon = false;
 const portraitAssignments = { '702393':7, '697444':4, '648789':6, '656646':8, '384754':11, '697789':13, '410394':18 };
