@@ -7,6 +7,7 @@
 - 데이터: GitHub `data` 브랜치. 앱 배포와 독립적으로 갱신.
 - 이미지: `/status.jpg` 고정 URL. Vercel 외부 rewrite로 data 브랜치 이미지 제공.
 - 자동 갱신: 매시간 17분 GitHub Actions 실행. 스케줄은 GitHub 상황에 따라 지연 가능.
+- data 브랜치에도 `vercel.json`을 두어 데이터 푸시 시 Vercel 빌드를 건너뜀.
 - 수동 실행: Actions → Refresh prison roster → Run workflow.
 
 ## 갱신 순서

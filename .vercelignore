@@ -1,0 +1,8 @@
+data/
+seed/
+tests/
+live/
+__pycache__/
+collect_data.py
+summarize_data.py
+.github/
