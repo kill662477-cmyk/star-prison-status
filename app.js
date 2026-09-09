@@ -30,6 +30,7 @@ function card(person, index) {
   head.append(text('span','',person.manual_override?'수동 지정':'수감기록 '+String(index+1).padStart(2,'0')),text('b','',person.life_sentence?'무기수':days !== null && days>=0 && days<=7?'출소 임박':'수감 중'));
   const image=text('div','portrait-wrap','');
   const photo=text('div','portrait','');
+  if(person.member_id === '708472') photo.classList.add('portrait-hood');
   const slot=portraitAssignments[person.member_id]??Number(person.member_id)%20;
   photo.style.setProperty('--x',`${slot%5*25}%`);photo.style.setProperty('--y',`${Math.floor(slot/5)*100/3}%`);
   image.setAttribute('role','img');image.setAttribute('aria-label','가상 인물 머그샷');image.append(photo);
