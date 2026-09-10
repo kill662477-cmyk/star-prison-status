@@ -1,45 +1,6 @@
 {
-  "collected_at": "2026-09-11T07:38:41.594503+09:00",
+  "collected_at": "2026-09-11T07:42:55.765025+09:00",
   "prisoners": [
-    {
-      "ban_id": "30068",
-      "member_id": "695044",
-      "nickname": "아이브장원영",
-      "reason": "💩",
-      "period": "🔒 징역 1개월",
-      "registered_at": "26-09-10 20:14",
-      "release_at": "2026-10-10T20:14:00+09:00",
-      "d_day": 29,
-      "life_sentence": false,
-      "remaining_raw": "29일 12시간 남음",
-      "source_url": "https://ygosu.com/ban_status/?view=restrictions&sort=recent&bid=pan_monstarz&page=1",
-      "prison_evidence": {
-        "post_id": 28680,
-        "member_id": "695044",
-        "nickname": "아이브장원영",
-        "post_url": "https://ygosu.com/board/pan_prison/28680"
-      }
-    },
-    {
-      "ban_id": "30065",
-      "member_id": "676431",
-      "nickname": "창벌레견ㅗ",
-      "reason": "욕설/비방",
-      "period": "🔒 징역 1개월",
-      "registered_at": "26-09-10 17:19",
-      "release_at": "2026-10-10T17:19:00+09:00",
-      "d_day": 29,
-      "life_sentence": false,
-      "remaining_raw": "29일 9시간 남음",
-      "source_url": "https://ygosu.com/ban_status/?view=restrictions&sort=recent&bid=pan_monstarz&page=1",
-      "prison_evidence": {
-        "member_id": "676431",
-        "nickname": "창벌레견ㅗ",
-        "post_url": "https://ygosu.com/board/pan_prison/4530",
-        "date_raw": "26.05.27",
-        "list_url": "https://ygosu.com/board/pan_prison/?page=615"
-      }
-    },
     {
       "member_id": "708472",
       "nickname": "햇딕이",
@@ -65,11 +26,13 @@
       "remaining_raw": "3일 6시간 남음",
       "source_url": "https://ygosu.com/ban_status/?view=restrictions&sort=recent&bid=pan_monstarz&page=1",
       "prison_evidence": {
+        "post_id": 28706,
         "member_id": "697444",
         "nickname": "더블패티",
-        "post_url": "https://ygosu.com/board/pan_prison/21983",
-        "date_raw": "26.08.17",
-        "list_url": "https://ygosu.com/board/pan_prison/?page=202"
+        "post_url": "https://ygosu.com/board/pan_prison/28706",
+        "date_raw": "26.09.10",
+        "posted_at": "2026-09-10T00:00:00+09:00",
+        "posted_exact": false
       }
     },
     {
@@ -85,11 +48,13 @@
       "remaining_raw": "23일 17시간 남음",
       "source_url": "https://ygosu.com/ban_status/?view=restrictions&sort=recent&bid=pan_monstarz&page=3",
       "prison_evidence": {
+        "post_id": 28669,
         "member_id": "648789",
         "nickname": "암게이",
-        "post_url": "https://ygosu.com/board/pan_prison/23343",
-        "date_raw": "26.08.23",
-        "list_url": "https://ygosu.com/board/pan_prison/?page=162"
+        "post_url": "https://ygosu.com/board/pan_prison/28669",
+        "date_raw": "26.09.10",
+        "posted_at": "2026-09-10T00:00:00+09:00",
+        "posted_exact": false
       }
     },
     {
@@ -105,68 +70,25 @@
       "remaining_raw": "23일 13시간 남음",
       "source_url": "https://ygosu.com/ban_status/?view=restrictions&sort=recent&bid=pan_monstarz&page=4",
       "prison_evidence": {
+        "post_id": 28611,
         "member_id": "656646",
         "nickname": "해체시와접",
-        "post_url": "https://ygosu.com/board/pan_prison/28005",
-        "date_raw": "22:34",
-        "list_url": "https://ygosu.com/board/pan_prison/?page=1"
-      }
-    },
-    {
-      "ban_id": "29859",
-      "member_id": "384754",
-      "nickname": "뚜바비쿤",
-      "reason": "리캡 감옥에다 안 올리면 안 풀어줌",
-      "period": "🔒 징역 1개월",
-      "registered_at": "26-09-04 20:49",
-      "release_at": "2026-10-04T20:49:00+09:00",
-      "d_day": 23,
-      "life_sentence": false,
-      "remaining_raw": "23일 13시간 남음",
-      "source_url": "https://ygosu.com/ban_status/?view=restrictions&sort=recent&bid=pan_monstarz&page=5",
-      "prison_evidence": {
-        "member_id": "384754",
-        "nickname": "뚜바미쿤",
-        "post_url": "https://ygosu.com/board/pan_prison/7549",
-        "date_raw": "26.06.03",
-        "list_url": "https://ygosu.com/board/pan_prison/?page=545"
+        "post_url": "https://ygosu.com/board/pan_prison/28611",
+        "date_raw": "26.09.10",
+        "posted_at": "2026-09-10T00:00:00+09:00",
+        "posted_exact": false
       }
     }
   ],
-  "match_count": 7,
+  "match_count": 4,
   "ban_count": 116,
   "ban_pages": 8,
   "prison_board_ban_count": 19,
   "prison_board_ban_pages": 2,
-  "incremental_pages": 1,
+  "incremental_pages": 265,
+  "scan_floor": "2026-08-11T13:37:00+09:00",
   "author_count": 234,
   "excluded_prison_banned": [
-    {
-      "ban_id": "29883",
-      "member_id": "669541",
-      "nickname": "솔라나",
-      "reason": "게시판 성격 위반",
-      "period": "🔒 징역 1개월",
-      "registered_at": "26-09-04 22:28",
-      "release_at": "2026-10-04T22:28:00+09:00",
-      "d_day": 23,
-      "life_sentence": false,
-      "remaining_raw": "23일 14시간 남음",
-      "source_url": "https://ygosu.com/ban_status/?view=restrictions&sort=recent&bid=pan_monstarz&page=3"
-    },
-    {
-      "ban_id": "29802",
-      "member_id": "410394",
-      "nickname": "쿠루릉쿵",
-      "reason": "꾸준히 크루원 비방글 작성",
-      "period": "🔒 징역 1개월",
-      "registered_at": "26-08-31 22:34",
-      "release_at": "2026-09-30T22:34:00+09:00",
-      "d_day": 19,
-      "life_sentence": false,
-      "remaining_raw": "19일 14시간 남음",
-      "source_url": "https://ygosu.com/ban_status/?view=restrictions&sort=recent&bid=pan_monstarz&page=5"
-    },
     {
       "ban_id": "29785",
       "member_id": "580145",
@@ -270,7 +192,7 @@
       "release_at": "2026-09-12T18:41:00+09:00",
       "d_day": 1,
       "life_sentence": false,
-      "remaining_raw": "1일 11시간 남음",
+      "remaining_raw": "1일 10시간 남음",
       "source_url": "https://ygosu.com/ban_status/?view=restrictions&sort=recent&bid=pan_monstarz&page=8"
     }
   ],
