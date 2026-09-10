@@ -71,22 +71,55 @@ def parse_posts(soup):
         match=re.match(r'/board/pan_prison/(\d+)',link['href']) if link else None
         if not match: continue
         a=row.select_one('td.name a[onclick]')
-        posts.append(dict(post_id=int(match[1]),member_id=member(a),nickname=a.get_text(strip=True) if a else '',post_url=f'https://ygosu.com/board/pan_prison/{match[1]}',notice='notice' in row.get('class',[])))
+        date=row.select_one('td.date')
+        posts.append(dict(post_id=int(match[1]),member_id=member(a),nickname=a.get_text(strip=True) if a else '',post_url=f'https://ygosu.com/board/pan_prison/{match[1]}',date_raw=date.get_text(strip=True) if date else '',notice='notice' in row.get('class',[])))
     return posts
-def collect_new(authors,checkpoint):
+def post_time(raw,now):
+    """List rows show today's posts as HH:MM and older ones as YY.MM.DD."""
+    raw=(raw or '').strip()
+    if re.fullmatch(r'\d{1,2}:\d{2}',raw):
+        hour,minute=raw.split(':')
+        return now.replace(hour=int(hour),minute=int(minute),second=0,microsecond=0),True
+    if re.fullmatch(r'\d{2}\.\d{2}\.\d{2}',raw):
+        return datetime.strptime(raw,'%y.%m.%d').replace(tzinfo=KST),False
+    raise ValueError('Unsupported post date: '+raw)
+def ban_time(stamp):
+    for fmt in ('%y-%m-%d %H:%M','%y-%m-%d'):
+        try: return datetime.strptime(stamp,fmt).replace(tzinfo=KST)
+        except ValueError: pass
+    raise ValueError('Unsupported ban date: '+str(stamp))
+def resolve_exact(entry):
+    """List pages only date older posts, so read the exact stamp off the post itself."""
+    element=fetch(entry['post_url']).select_one('.board_top .date')
+    found=re.search(r'\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}',element.get_text(' ',strip=True) if element else '')
+    if not found: raise ValueError('Missing exact post time: '+entry['post_url'])
+    entry['posted_at']=datetime.strptime(found[0],'%Y-%m-%d %H:%M:%S').replace(tzinfo=KST).isoformat()
+    entry['posted_exact']=True
+    return entry
+def collect_new(authors,checkpoint,floor,now):
+    """Walk back to the oldest ban so every author's latest post is known."""
     high=checkpoint;previous=None
     for page in range(1,501):
         rows=parse_posts(fetch(f'https://ygosu.com/board/pan_prison/?page={page}'))
-        normal=[r['post_id'] for r in rows if not r['notice']]
-        for row in rows:
-            if row['member_id'] and row['member_id'] not in authors:
-                authors[row['member_id']]={k:v for k,v in row.items() if k!='notice'}
-        if not normal: return high,page
-        high=max(high,max(normal))
-        if min(normal)<=checkpoint: return high,page
-        if normal==previous: return high,page
-        previous=normal
-    raise ValueError('Incremental page limit reached; checkpoint not advanced')
+        normal=[r for r in rows if not r['notice']]
+        for row in normal:
+            if not row['member_id']: continue
+            stamp,exact=post_time(row['date_raw'],now)
+            known=authors.get(row['member_id'])
+            if known and known.get('post_id',0)>row['post_id']: continue
+            authors[row['member_id']]=dict({k:v for k,v in row.items() if k!='notice'},posted_at=stamp.isoformat(),posted_exact=exact)
+        ids=[r['post_id'] for r in normal]
+        if not ids: return high,page
+        high=max(high,max(ids))
+        if min(post_time(r['date_raw'],now)[0] for r in normal)<floor: return high,page
+        if ids==previous: return high,page
+        previous=ids
+    raise ValueError('Scan page limit reached; ban window not covered')
+def posted_after_ban(entry,ban):
+    """Only members who posted in the prison board after their ban was registered."""
+    if not entry or not entry.get('posted_at'): return False
+    posted=datetime.fromisoformat(entry['posted_at']);banned=ban_time(ban['registered_at'])
+    return posted>banned if entry.get('posted_exact') else posted.date()>banned.date()
 def eligible(bans,prison_bans,authors,overrides):
     blocked={x['member_id'] for x in prison_bans if x['member_id']}
     blocked_names={x['nickname'] for x in prison_bans if not x['member_id']}
@@ -95,7 +128,7 @@ def eligible(bans,prison_bans,authors,overrides):
         mid=ban['member_id']
         if not mid or ban['nickname'] in blocked_names:
             pending.append(ban);continue
-        if mid not in authors: continue
+        if not posted_after_ban(authors.get(mid),ban): continue
         if mid in blocked: excluded.append(ban);continue
         included[mid]=dict(ban,prison_evidence=authors[mid])
     for override in overrides:
@@ -107,11 +140,18 @@ def main():
     directory=ROOT/args.state_dir
     source=directory if (directory/'state.json').exists() else ROOT/'seed'
     state=read(source/'state.json');authors={x['member_id']:x for x in read(source/'authors.json')}
-    checkpoint,pages=collect_new(authors,state['last_post_id'])
+    stamp=datetime.now(KST)
     bans,ban_pages=collect_bans('pan_monstarz');prison_bans,prison_pages=collect_bans('pan_prison')
+    floor=min([ban_time(x['registered_at']) for x in bans],default=stamp)-timedelta(days=1)
+    checkpoint,pages=collect_new(authors,state['last_post_id'],floor,stamp)
+    for ban in bans:
+        # A same-day list entry cannot be ordered against the ban without the exact stamp.
+        entry=authors.get(ban['member_id'] or '')
+        if entry and entry.get('posted_at') and not entry.get('posted_exact') and datetime.fromisoformat(entry['posted_at']).date()==ban_time(ban['registered_at']).date():
+            resolve_exact(entry)
     records,excluded,pending=eligible(bans,prison_bans,authors,read(ROOT/'data/manual-overrides.json'))
-    now=datetime.now(KST).isoformat()
-    snapshot=dict(collected_at=now,prisoners=records,match_count=len(records),ban_count=len(bans),ban_pages=ban_pages,prison_board_ban_count=len(prison_bans),prison_board_ban_pages=prison_pages,incremental_pages=pages,author_count=len(authors),excluded_prison_banned=excluded,missing_member_id_bans=pending,manual_count=sum(bool(x.get('manual_override')) for x in records))
+    now=stamp.isoformat()
+    snapshot=dict(collected_at=now,prisoners=records,match_count=len(records),ban_count=len(bans),ban_pages=ban_pages,prison_board_ban_count=len(prison_bans),prison_board_ban_pages=prison_pages,incremental_pages=pages,scan_floor=floor.isoformat(),author_count=len(authors),excluded_prison_banned=excluded,missing_member_id_bans=pending,manual_count=sum(bool(x.get('manual_override')) for x in records))
     write(directory/'prisoners.json',snapshot);write(directory/'authors.json',list(authors.values()))
     write(directory/'state.json',dict(last_post_id=checkpoint,last_success=now))
     print(json.dumps({k:v for k,v in snapshot.items() if not isinstance(v,list)},ensure_ascii=False))
