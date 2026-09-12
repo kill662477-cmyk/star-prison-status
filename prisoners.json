@@ -1,5 +1,5 @@
 {
-  "collected_at": "2026-09-12T23:11:43.077488+09:00",
+  "collected_at": "2026-09-13T02:14:04.751657+09:00",
   "prisoners": [
     {
       "member_id": "708472",
@@ -21,9 +21,9 @@
       "period": "🔒 징역 1주",
       "registered_at": "26-09-07 14:15",
       "release_at": "2026-09-14T14:15:00+09:00",
-      "d_day": 2,
+      "d_day": 1,
       "life_sentence": false,
-      "remaining_raw": "1일 15시간 남음",
+      "remaining_raw": "1일 12시간 남음",
       "source_url": "https://ygosu.com/ban_status/?view=restrictions&sort=recent&bid=pan_monstarz&page=2",
       "prison_evidence": {
         "post_id": 28706,
@@ -43,9 +43,9 @@
       "period": "🔒 징역 1개월",
       "registered_at": "26-09-05 01:33",
       "release_at": "2026-10-05T01:33:00+09:00",
-      "d_day": 23,
+      "d_day": 22,
       "life_sentence": false,
-      "remaining_raw": "22일 2시간 남음",
+      "remaining_raw": "21일 23시간 남음",
       "source_url": "https://ygosu.com/ban_status/?view=restrictions&sort=recent&bid=pan_monstarz&page=3",
       "prison_evidence": {
         "post_id": 28669,
@@ -65,18 +65,18 @@
       "period": "🔒 징역 1개월",
       "registered_at": "26-09-04 21:17",
       "release_at": "2026-10-04T21:17:00+09:00",
-      "d_day": 22,
+      "d_day": 21,
       "life_sentence": false,
-      "remaining_raw": "21일 22시간 남음",
+      "remaining_raw": "21일 19시간 남음",
       "source_url": "https://ygosu.com/ban_status/?view=restrictions&sort=recent&bid=pan_monstarz&page=5",
       "prison_evidence": {
         "post_id": 30376,
         "member_id": "656646",
         "nickname": "해체시와접",
         "post_url": "https://ygosu.com/board/pan_prison/30376",
-        "date_raw": "20:46",
-        "posted_at": "2026-09-12T20:46:00+09:00",
-        "posted_exact": true
+        "date_raw": "26.09.12",
+        "posted_at": "2026-09-12T00:00:00+09:00",
+        "posted_exact": false
       }
     },
     {
@@ -87,9 +87,9 @@
       "period": "🔒 징역 1개월",
       "registered_at": "26-08-19 22:46",
       "release_at": "2026-09-18T22:46:00+09:00",
-      "d_day": 6,
+      "d_day": 5,
       "life_sentence": false,
-      "remaining_raw": "5일 23시간 남음",
+      "remaining_raw": "5일 20시간 남음",
       "source_url": "https://ygosu.com/ban_status/?view=restrictions&sort=recent&bid=pan_monstarz&page=7",
       "prison_evidence": {
         "post_id": 29219,
@@ -107,7 +107,7 @@
   "ban_pages": 8,
   "prison_board_ban_count": 14,
   "prison_board_ban_pages": 1,
-  "incremental_pages": 314,
+  "incremental_pages": 292,
   "scan_floor": "2026-08-13T08:16:00+09:00",
   "author_count": 242,
   "excluded_prison_banned": [
@@ -119,9 +119,9 @@
       "period": "🔒 징역 1개월",
       "registered_at": "26-08-30 21:18",
       "release_at": "2026-09-29T21:18:00+09:00",
-      "d_day": 17,
+      "d_day": 16,
       "life_sentence": false,
-      "remaining_raw": "16일 22시간 남음",
+      "remaining_raw": "16일 19시간 남음",
       "source_url": "https://ygosu.com/ban_status/?view=restrictions&sort=recent&bid=pan_monstarz&page=6"
     },
     {
@@ -132,9 +132,9 @@
       "period": "🔒 징역 1개월",
       "registered_at": "26-08-15 13:25",
       "release_at": "2026-09-14T13:25:00+09:00",
-      "d_day": 2,
+      "d_day": 1,
       "life_sentence": false,
-      "remaining_raw": "1일 14시간 남음",
+      "remaining_raw": "1일 11시간 남음",
       "source_url": "https://ygosu.com/ban_status/?view=restrictions&sort=recent&bid=pan_monstarz&page=8"
     }
   ],
@@ -147,9 +147,9 @@
       "period": "🔒 징역 1개월",
       "registered_at": "26-09-03 19:48",
       "release_at": "2026-10-03T19:48:00+09:00",
-      "d_day": 21,
+      "d_day": 20,
       "life_sentence": false,
-      "remaining_raw": "20일 20시간 남음",
+      "remaining_raw": "20일 17시간 남음",
       "source_url": "https://ygosu.com/ban_status/?view=restrictions&sort=recent&bid=pan_monstarz&page=5"
     },
     {
@@ -160,9 +160,9 @@
       "period": "🔒 징역 1개월",
       "registered_at": "26-09-03 04:44",
       "release_at": "2026-10-03T04:44:00+09:00",
-      "d_day": 21,
+      "d_day": 20,
       "life_sentence": false,
-      "remaining_raw": "20일 5시간 남음",
+      "remaining_raw": "20일 2시간 남음",
       "source_url": "https://ygosu.com/ban_status/?view=restrictions&sort=recent&bid=pan_monstarz&page=5"
     },
     {
@@ -173,9 +173,9 @@
       "period": "🔒 징역 1개월",
       "registered_at": "26-09-02 02:00",
       "release_at": "2026-10-02T02:00:00+09:00",
-      "d_day": 20,
+      "d_day": 19,
       "life_sentence": false,
-      "remaining_raw": "19일 2시간 남음",
+      "remaining_raw": "18일 23시간 남음",
       "source_url": "https://ygosu.com/ban_status/?view=restrictions&sort=recent&bid=pan_monstarz&page=6"
     },
     {
@@ -186,9 +186,9 @@
       "period": "🔒 징역 1개월",
       "registered_at": "26-08-26 00:53",
       "release_at": "2026-09-25T00:53:00+09:00",
-      "d_day": 13,
+      "d_day": 12,
       "life_sentence": false,
-      "remaining_raw": "12일 1시간 남음",
+      "remaining_raw": "11일 22시간 남음",
       "source_url": "https://ygosu.com/ban_status/?view=restrictions&sort=recent&bid=pan_monstarz&page=7"
     },
     {
@@ -199,9 +199,9 @@
       "period": "🔒 징역 1개월",
       "registered_at": "26-08-16 22:05",
       "release_at": "2026-09-15T22:05:00+09:00",
-      "d_day": 3,
+      "d_day": 2,
       "life_sentence": false,
-      "remaining_raw": "2일 22시간 남음",
+      "remaining_raw": "2일 19시간 남음",
       "source_url": "https://ygosu.com/ban_status/?view=restrictions&sort=recent&bid=pan_monstarz&page=8"
     }
   ],
