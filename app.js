@@ -49,7 +49,11 @@ function render() {
   if(!snapshot) return;
   const search=$('#search').value.trim().toLocaleLowerCase();
   let records=snapshot.prisoners.filter(p=>(!onlySoon||(remaining(p)!==null&&remaining(p)>=0&&remaining(p)<=7))&&(!search||p.nickname.toLocaleLowerCase().includes(search)||p.member_id.includes(search)));
-  records.sort((a,b)=>$('#sort').value==='release'?(Date.parse(a.release_at)||Infinity)-(Date.parse(b.release_at)||Infinity):b.registered_at.localeCompare(a.registered_at));
+  records.sort((a,b)=>{
+    const pinned = Number(b.member_id === '708472') - Number(a.member_id === '708472');
+    if(pinned) return pinned;
+    return $('#sort').value==='release'?(Date.parse(a.release_at)||Infinity)-(Date.parse(b.release_at)||Infinity):b.registered_at.localeCompare(a.registered_at);
+  });
   $('#cards').replaceChildren(...records.map(card));
   if(!records.length) $('#cards').append(text('p','empty','조건에 맞는 수감자가 없습니다.'));
   $('#result-count').textContent=`전체 ${snapshot.prisoners.length}명 중 ${records.length}명 표시`;

@@ -22,6 +22,7 @@ try{
   await page.evaluate(async()=>{await document.fonts.ready;await Promise.all(['assets/mugshots-v2.png','assets/haetdik-hood-v2.png','assets/prison-wall.png'].map(src=>new Promise((resolve,reject)=>{const img=new Image();img.onload=resolve;img.onerror=reject;img.src=src;})));});
   const geometry=await page.evaluate(()=>({width:document.documentElement.clientWidth,height:document.documentElement.scrollHeight,columns:getComputedStyle(document.querySelector('.cards')).gridTemplateColumns.split(' ').length}));
   if(geometry.columns!==3)throw Error('Capture must have three columns');
+  if(snapshot.prisoners.some(p=>p.member_id==='708472') && await page.locator('.prisoner .member').first().textContent() !== '(708472)') throw Error('Haetdik must be the first card');
   await page.screenshot({path:'live/status.jpg',type:'jpeg',quality:90,fullPage:true});
   await writeFile('live/capture.json',JSON.stringify({...geometry,count:snapshot.prisoners.length,captured_at:new Date().toISOString()},null,2));
   console.log(geometry);
