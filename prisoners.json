@@ -1,5 +1,5 @@
 {
-  "collected_at": "2026-10-11T03:40:25.668116+09:00",
+  "collected_at": "2026-10-11T07:37:32.553312+09:00",
   "prisoners": [
     {
       "ban_id": "30279",
@@ -11,7 +11,7 @@
       "release_at": "2026-10-21T08:19:00+09:00",
       "d_day": 10,
       "life_sentence": false,
-      "remaining_raw": "10일 4시간 남음",
+      "remaining_raw": "10일 41분 남음",
       "source_url": "https://ygosu.com/ban_status/?view=restrictions&sort=recent&bid=pan_monstarz&page=2",
       "prison_evidence": {
         "post_id": 34361,
@@ -33,7 +33,7 @@
       "release_at": "2026-10-14T23:07:00+09:00",
       "d_day": 3,
       "life_sentence": false,
-      "remaining_raw": "3일 19시간 남음",
+      "remaining_raw": "3일 15시간 남음",
       "source_url": "https://ygosu.com/ban_status/?view=restrictions&sort=recent&bid=pan_monstarz&page=3",
       "prison_evidence": {
         "post_id": 30787,
