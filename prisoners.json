@@ -1,6 +1,28 @@
 {
-  "collected_at": "2026-10-13T16:46:57.822964+09:00",
+  "collected_at": "2026-10-14T01:04:04.009362+09:00",
   "prisoners": [
+    {
+      "ban_id": "30538",
+      "member_id": "709257",
+      "nickname": "막탈기입니도",
+      "reason": "영구밴",
+      "period": "🔒 징역 1개월",
+      "registered_at": "26-10-14 00:12",
+      "release_at": "2026-11-13T00:12:00+09:00",
+      "d_day": 30,
+      "life_sentence": false,
+      "remaining_raw": "29일 23시간 남음",
+      "source_url": "https://ygosu.com/ban_status/?view=restrictions&sort=recent&bid=pan_monstarz&page=1",
+      "prison_evidence": {
+        "post_id": 36710,
+        "member_id": "709257",
+        "nickname": "막탈기입니도",
+        "post_url": "https://ygosu.com/board/pan_prison/36710",
+        "date_raw": "00:13",
+        "posted_at": "2026-10-14T00:13:00+09:00",
+        "posted_exact": true
+      }
+    },
     {
       "ban_id": "30279",
       "member_id": "707826",
@@ -9,9 +31,9 @@
       "period": "🔒 징역 1개월",
       "registered_at": "26-09-21 08:19",
       "release_at": "2026-10-21T08:19:00+09:00",
-      "d_day": 8,
+      "d_day": 7,
       "life_sentence": false,
-      "remaining_raw": "7일 15시간 남음",
+      "remaining_raw": "7일 7시간 남음",
       "source_url": "https://ygosu.com/ban_status/?view=restrictions&sort=recent&bid=pan_monstarz&page=2",
       "prison_evidence": {
         "post_id": 34361,
@@ -31,9 +53,9 @@
       "period": "🔒 징역 1개월",
       "registered_at": "26-09-14 23:07",
       "release_at": "2026-10-14T23:07:00+09:00",
-      "d_day": 1,
+      "d_day": 0,
       "life_sentence": false,
-      "remaining_raw": "1일 6시간 남음",
+      "remaining_raw": "22시간 3분 남음",
       "source_url": "https://ygosu.com/ban_status/?view=restrictions&sort=recent&bid=pan_monstarz&page=3",
       "prison_evidence": {
         "post_id": 30787,
@@ -58,14 +80,14 @@
       "d_day": null
     }
   ],
-  "match_count": 3,
-  "ban_count": 46,
-  "ban_pages": 4,
+  "match_count": 4,
+  "ban_count": 45,
+  "ban_pages": 3,
   "prison_board_ban_count": 7,
   "prison_board_ban_pages": 1,
-  "incremental_pages": 230,
-  "scan_floor": "2026-09-12T21:39:00+09:00",
-  "author_count": 265,
+  "incremental_pages": 227,
+  "scan_floor": "2026-09-13T23:07:00+09:00",
+  "author_count": 266,
   "excluded_prison_banned": [],
   "missing_member_id_bans": [],
   "manual_count": 1
