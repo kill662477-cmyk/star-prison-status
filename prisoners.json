@@ -1,5 +1,5 @@
 {
-  "collected_at": "2026-10-14T21:04:31.108908+09:00",
+  "collected_at": "2026-10-15T02:16:48.107398+09:00",
   "prisoners": [
     {
       "ban_id": "30542",
@@ -9,17 +9,17 @@
       "period": "🔒 징역 1주",
       "registered_at": "26-10-14 14:36",
       "release_at": "2026-10-21T14:36:00+09:00",
-      "d_day": 7,
+      "d_day": 6,
       "life_sentence": false,
-      "remaining_raw": "6일 17시간 남음",
+      "remaining_raw": "6일 12시간 남음",
       "source_url": "https://ygosu.com/ban_status/?view=restrictions&sort=recent&bid=pan_monstarz&page=1",
       "prison_evidence": {
-        "post_id": 36770,
+        "post_id": 36790,
         "member_id": "709257",
         "nickname": "막탈기입니도",
-        "post_url": "https://ygosu.com/board/pan_prison/36770",
-        "date_raw": "21:02",
-        "posted_at": "2026-10-14T21:02:00+09:00",
+        "post_url": "https://ygosu.com/board/pan_prison/36790",
+        "date_raw": "01:00",
+        "posted_at": "2026-10-15T01:00:00+09:00",
         "posted_exact": true
       }
     },
@@ -31,9 +31,9 @@
       "period": "🔒 징역 1개월",
       "registered_at": "26-09-21 08:19",
       "release_at": "2026-10-21T08:19:00+09:00",
-      "d_day": 7,
+      "d_day": 6,
       "life_sentence": false,
-      "remaining_raw": "6일 11시간 남음",
+      "remaining_raw": "6일 6시간 남음",
       "source_url": "https://ygosu.com/ban_status/?view=restrictions&sort=recent&bid=pan_monstarz&page=2",
       "prison_evidence": {
         "post_id": 34361,
@@ -42,28 +42,6 @@
         "post_url": "https://ygosu.com/board/pan_prison/34361",
         "date_raw": "26.10.01",
         "posted_at": "2026-10-01T00:00:00+09:00",
-        "posted_exact": false
-      }
-    },
-    {
-      "ban_id": "30185",
-      "member_id": "686755",
-      "nickname": "유남",
-      "reason": "랄조",
-      "period": "🔒 징역 1개월",
-      "registered_at": "26-09-14 23:07",
-      "release_at": "2026-10-14T23:07:00+09:00",
-      "d_day": 0,
-      "life_sentence": false,
-      "remaining_raw": "2시간 2분 남음",
-      "source_url": "https://ygosu.com/ban_status/?view=restrictions&sort=recent&bid=pan_monstarz&page=4",
-      "prison_evidence": {
-        "post_id": 30787,
-        "member_id": "686755",
-        "nickname": "유남",
-        "post_url": "https://ygosu.com/board/pan_prison/30787",
-        "date_raw": "26.09.15",
-        "posted_at": "2026-09-15T00:00:00+09:00",
         "posted_exact": false
       }
     },
@@ -80,13 +58,13 @@
       "d_day": null
     }
   ],
-  "match_count": 4,
-  "ban_count": 47,
+  "match_count": 3,
+  "ban_count": 46,
   "ban_pages": 4,
   "prison_board_ban_count": 7,
   "prison_board_ban_pages": 1,
-  "incremental_pages": 230,
-  "scan_floor": "2026-09-13T23:07:00+09:00",
+  "incremental_pages": 214,
+  "scan_floor": "2026-09-16T21:07:00+09:00",
   "author_count": 266,
   "excluded_prison_banned": [],
   "missing_member_id_bans": [],
