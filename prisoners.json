@@ -1,6 +1,28 @@
 {
-  "collected_at": "2026-10-15T13:47:31.547052+09:00",
+  "collected_at": "2026-10-16T00:05:37.266211+09:00",
   "prisoners": [
+    {
+      "ban_id": "30561",
+      "member_id": "568685",
+      "nickname": "고민중독",
+      "reason": "분탕",
+      "period": "🔒 징역 1개월",
+      "registered_at": "26-10-15 21:21",
+      "release_at": "2026-11-14T21:21:00+09:00",
+      "d_day": 29,
+      "life_sentence": false,
+      "remaining_raw": "29일 21시간 남음",
+      "source_url": "https://ygosu.com/ban_status/?view=restrictions&sort=recent&bid=pan_monstarz&page=2",
+      "prison_evidence": {
+        "post_id": 37031,
+        "member_id": "568685",
+        "nickname": "고민중독",
+        "post_url": "https://ygosu.com/board/pan_prison/37031",
+        "date_raw": "26.10.15",
+        "posted_at": "2026-10-15T22:41:42+09:00",
+        "posted_exact": true
+      }
+    },
     {
       "ban_id": "30542",
       "member_id": "709257",
@@ -9,18 +31,18 @@
       "period": "🔒 징역 1주",
       "registered_at": "26-10-14 14:36",
       "release_at": "2026-10-21T14:36:00+09:00",
-      "d_day": 6,
+      "d_day": 5,
       "life_sentence": false,
-      "remaining_raw": "6일 48분 남음",
-      "source_url": "https://ygosu.com/ban_status/?view=restrictions&sort=recent&bid=pan_monstarz&page=1",
+      "remaining_raw": "5일 14시간 남음",
+      "source_url": "https://ygosu.com/ban_status/?view=restrictions&sort=recent&bid=pan_monstarz&page=3",
       "prison_evidence": {
-        "post_id": 36808,
+        "post_id": 37075,
         "member_id": "709257",
         "nickname": "막탈기입니도",
-        "post_url": "https://ygosu.com/board/pan_prison/36808",
-        "date_raw": "13:16",
-        "posted_at": "2026-10-15T13:16:00+09:00",
-        "posted_exact": true
+        "post_url": "https://ygosu.com/board/pan_prison/37075",
+        "date_raw": "26.10.15",
+        "posted_at": "2026-10-15T00:00:00+09:00",
+        "posted_exact": false
       }
     },
     {
@@ -31,10 +53,10 @@
       "period": "🔒 징역 1개월",
       "registered_at": "26-09-21 08:19",
       "release_at": "2026-10-21T08:19:00+09:00",
-      "d_day": 6,
+      "d_day": 5,
       "life_sentence": false,
-      "remaining_raw": "5일 18시간 남음",
-      "source_url": "https://ygosu.com/ban_status/?view=restrictions&sort=recent&bid=pan_monstarz&page=3",
+      "remaining_raw": "5일 8시간 남음",
+      "source_url": "https://ygosu.com/ban_status/?view=restrictions&sort=recent&bid=pan_monstarz&page=4",
       "prison_evidence": {
         "post_id": 34361,
         "member_id": "707826",
@@ -58,15 +80,29 @@
       "d_day": null
     }
   ],
-  "match_count": 3,
-  "ban_count": 48,
-  "ban_pages": 4,
-  "prison_board_ban_count": 7,
+  "match_count": 4,
+  "ban_count": 74,
+  "ban_pages": 5,
+  "prison_board_ban_count": 9,
   "prison_board_ban_pages": 1,
-  "incremental_pages": 214,
+  "incremental_pages": 225,
   "scan_floor": "2026-09-16T21:07:00+09:00",
-  "author_count": 266,
+  "author_count": 268,
   "excluded_prison_banned": [],
-  "missing_member_id_bans": [],
+  "missing_member_id_bans": [
+    {
+      "ban_id": "30257",
+      "member_id": null,
+      "nickname": "우리형이최고",
+      "reason": "게시판 성격 위반",
+      "period": "🔒 징역 1개월",
+      "registered_at": "26-09-19 15:43",
+      "release_at": "2026-10-19T15:43:00+09:00",
+      "d_day": 3,
+      "life_sentence": false,
+      "remaining_raw": "3일 15시간 남음",
+      "source_url": "https://ygosu.com/ban_status/?view=restrictions&sort=recent&bid=pan_monstarz&page=5"
+    }
+  ],
   "manual_count": 1
 }
