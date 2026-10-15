@@ -1,5 +1,5 @@
 {
-  "collected_at": "2026-10-15T08:57:42.278419+09:00",
+  "collected_at": "2026-10-15T13:47:31.547052+09:00",
   "prisoners": [
     {
       "ban_id": "30542",
@@ -11,15 +11,15 @@
       "release_at": "2026-10-21T14:36:00+09:00",
       "d_day": 6,
       "life_sentence": false,
-      "remaining_raw": "6일 5시간 남음",
+      "remaining_raw": "6일 48분 남음",
       "source_url": "https://ygosu.com/ban_status/?view=restrictions&sort=recent&bid=pan_monstarz&page=1",
       "prison_evidence": {
-        "post_id": 36790,
+        "post_id": 36808,
         "member_id": "709257",
         "nickname": "막탈기입니도",
-        "post_url": "https://ygosu.com/board/pan_prison/36790",
-        "date_raw": "01:00",
-        "posted_at": "2026-10-15T01:00:00+09:00",
+        "post_url": "https://ygosu.com/board/pan_prison/36808",
+        "date_raw": "13:16",
+        "posted_at": "2026-10-15T13:16:00+09:00",
         "posted_exact": true
       }
     },
@@ -33,7 +33,7 @@
       "release_at": "2026-10-21T08:19:00+09:00",
       "d_day": 6,
       "life_sentence": false,
-      "remaining_raw": "5일 23시간 남음",
+      "remaining_raw": "5일 18시간 남음",
       "source_url": "https://ygosu.com/ban_status/?view=restrictions&sort=recent&bid=pan_monstarz&page=3",
       "prison_evidence": {
         "post_id": 34361,
