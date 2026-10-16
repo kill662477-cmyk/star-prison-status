@@ -1,5 +1,5 @@
 {
-  "collected_at": "2026-10-16T10:25:25.609924+09:00",
+  "collected_at": "2026-10-16T16:15:13.617125+09:00",
   "prisoners": [
     {
       "ban_id": "30561",
@@ -11,7 +11,7 @@
       "release_at": "2026-11-14T21:21:00+09:00",
       "d_day": 29,
       "life_sentence": false,
-      "remaining_raw": "29일 10시간 남음",
+      "remaining_raw": "29일 5시간 남음",
       "source_url": "https://ygosu.com/ban_status/?view=restrictions&sort=recent&bid=pan_monstarz&page=3",
       "prison_evidence": {
         "post_id": 37031,
@@ -33,16 +33,16 @@
       "release_at": "2026-10-21T14:36:00+09:00",
       "d_day": 5,
       "life_sentence": false,
-      "remaining_raw": "5일 4시간 남음",
+      "remaining_raw": "4일 22시간 남음",
       "source_url": "https://ygosu.com/ban_status/?view=restrictions&sort=recent&bid=pan_monstarz&page=3",
       "prison_evidence": {
-        "post_id": 37075,
+        "post_id": 37170,
         "member_id": "709257",
         "nickname": "막탈기입니도",
-        "post_url": "https://ygosu.com/board/pan_prison/37075",
-        "date_raw": "26.10.15",
-        "posted_at": "2026-10-15T00:00:00+09:00",
-        "posted_exact": false
+        "post_url": "https://ygosu.com/board/pan_prison/37170",
+        "date_raw": "14:03",
+        "posted_at": "2026-10-16T14:03:00+09:00",
+        "posted_exact": true
       }
     },
     {
@@ -55,7 +55,7 @@
       "release_at": "2026-10-21T08:19:00+09:00",
       "d_day": 5,
       "life_sentence": false,
-      "remaining_raw": "4일 21시간 남음",
+      "remaining_raw": "4일 16시간 남음",
       "source_url": "https://ygosu.com/ban_status/?view=restrictions&sort=recent&bid=pan_monstarz&page=5",
       "prison_evidence": {
         "post_id": 34361,
@@ -81,14 +81,28 @@
     }
   ],
   "match_count": 4,
-  "ban_count": 83,
+  "ban_count": 88,
   "ban_pages": 6,
   "prison_board_ban_count": 8,
   "prison_board_ban_pages": 1,
-  "incremental_pages": 226,
+  "incremental_pages": 229,
   "scan_floor": "2026-09-16T21:07:00+09:00",
   "author_count": 268,
-  "excluded_prison_banned": [],
+  "excluded_prison_banned": [
+    {
+      "ban_id": "30594",
+      "member_id": "385436",
+      "nickname": "오복이",
+      "reason": "음란물 게재",
+      "period": "🔒 징역 1개월",
+      "registered_at": "26-10-16 01:24",
+      "release_at": "2026-11-15T01:24:00+09:00",
+      "d_day": 30,
+      "life_sentence": false,
+      "remaining_raw": "29일 9시간 남음",
+      "source_url": "https://ygosu.com/ban_status/?view=restrictions&sort=recent&bid=pan_monstarz&page=1"
+    }
+  ],
   "missing_member_id_bans": [
     {
       "ban_id": "30257",
@@ -100,7 +114,7 @@
       "release_at": "2026-10-19T15:43:00+09:00",
       "d_day": 3,
       "life_sentence": false,
-      "remaining_raw": "3일 5시간 남음",
+      "remaining_raw": "2일 23시간 남음",
       "source_url": "https://ygosu.com/ban_status/?view=restrictions&sort=recent&bid=pan_monstarz&page=6"
     }
   ],
