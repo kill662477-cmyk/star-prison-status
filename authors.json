@@ -1416,8 +1416,8 @@
     "nickname": "오복이",
     "post_url": "https://ygosu.com/board/pan_prison/37181",
     "date_raw": "26.10.16",
-    "posted_at": "2026-10-16T14:40:31+09:00",
-    "posted_exact": true
+    "posted_at": "2026-10-16T00:00:00+09:00",
+    "posted_exact": false
   },
   {
     "member_id": "706775",
