@@ -61,21 +61,21 @@
     "posted_exact": false
   },
   {
-    "post_id": 37538,
+    "post_id": 37572,
     "member_id": "656646",
     "nickname": "해체시와접",
-    "post_url": "https://ygosu.com/board/pan_prison/37538",
-    "date_raw": "01:16",
-    "posted_at": "2026-10-18T01:16:00+09:00",
+    "post_url": "https://ygosu.com/board/pan_prison/37572",
+    "date_raw": "12:46",
+    "posted_at": "2026-10-18T12:46:00+09:00",
     "posted_exact": true
   },
   {
-    "post_id": 37548,
+    "post_id": 37575,
     "member_id": "695351",
     "nickname": "암드래곤7",
-    "post_url": "https://ygosu.com/board/pan_prison/37548",
-    "date_raw": "01:42",
-    "posted_at": "2026-10-18T01:42:00+09:00",
+    "post_url": "https://ygosu.com/board/pan_prison/37575",
+    "date_raw": "14:41",
+    "posted_at": "2026-10-18T14:41:00+09:00",
     "posted_exact": true
   },
   {
@@ -142,12 +142,12 @@
     "posted_exact": false
   },
   {
-    "post_id": 37546,
+    "post_id": 37573,
     "member_id": "493644",
     "nickname": "Chovy정지훈",
-    "post_url": "https://ygosu.com/board/pan_prison/37546",
-    "date_raw": "01:33",
-    "posted_at": "2026-10-18T01:33:00+09:00",
+    "post_url": "https://ygosu.com/board/pan_prison/37573",
+    "date_raw": "13:52",
+    "posted_at": "2026-10-18T13:52:00+09:00",
     "posted_exact": true
   },
   {
@@ -1915,13 +1915,13 @@
     "posted_exact": false
   },
   {
-    "post_id": 37314,
+    "post_id": 37571,
     "member_id": "707744",
     "nickname": "드로잔",
-    "post_url": "https://ygosu.com/board/pan_prison/37314",
-    "date_raw": "26.10.16",
-    "posted_at": "2026-10-16T00:00:00+09:00",
-    "posted_exact": false
+    "post_url": "https://ygosu.com/board/pan_prison/37571",
+    "date_raw": "12:34",
+    "posted_at": "2026-10-18T12:34:00+09:00",
+    "posted_exact": true
   },
   {
     "post_id": 30260,
@@ -2201,5 +2201,14 @@
     "date_raw": "26.10.16",
     "posted_at": "2026-10-16T00:00:00+09:00",
     "posted_exact": false
+  },
+  {
+    "post_id": 37574,
+    "member_id": "709309",
+    "nickname": "언제나김유난",
+    "post_url": "https://ygosu.com/board/pan_prison/37574",
+    "date_raw": "14:16",
+    "posted_at": "2026-10-18T14:16:00+09:00",
+    "posted_exact": true
   }
 ]
