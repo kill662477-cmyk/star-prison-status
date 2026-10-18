@@ -9,12 +9,12 @@
     "posted_exact": true
   },
   {
-    "post_id": 37767,
+    "post_id": 37774,
     "member_id": "708472",
     "nickname": "암딕이",
-    "post_url": "https://ygosu.com/board/pan_prison/37767",
-    "date_raw": "02:47",
-    "posted_at": "2026-10-19T02:47:00+09:00",
+    "post_url": "https://ygosu.com/board/pan_prison/37774",
+    "date_raw": "04:00",
+    "posted_at": "2026-10-19T04:00:00+09:00",
     "posted_exact": true
   },
   {
@@ -2176,12 +2176,12 @@
     "posted_exact": true
   },
   {
-    "post_id": 37768,
+    "post_id": 37772,
     "member_id": "709214",
     "nickname": "야수의호흡",
-    "post_url": "https://ygosu.com/board/pan_prison/37768",
-    "date_raw": "03:02",
-    "posted_at": "2026-10-19T03:02:00+09:00",
+    "post_url": "https://ygosu.com/board/pan_prison/37772",
+    "date_raw": "03:36",
+    "posted_at": "2026-10-19T03:36:00+09:00",
     "posted_exact": true
   },
   {
@@ -2210,5 +2210,14 @@
     "date_raw": "26.10.18",
     "posted_at": "2026-10-18T00:00:00+09:00",
     "posted_exact": false
+  },
+  {
+    "post_id": 37769,
+    "member_id": "708638",
+    "nickname": "본마티",
+    "post_url": "https://ygosu.com/board/pan_prison/37769",
+    "date_raw": "03:21",
+    "posted_at": "2026-10-19T03:21:00+09:00",
+    "posted_exact": true
   }
 ]
